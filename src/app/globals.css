@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #E8440A;
+  --orange-light: #FF6B35;
+  --orange-dark: #C43808;
+  --black: #111111;
+  --dark: #1A1A1A;
+  --mid: #2A2A2A;
+  --gray: #6B6B6B;
+  --light: #F5F5F5;
+  --off-white: #FAFAFA;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--off-white);
+  color: var(--black);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slash divider signature element */
+.slash-accent::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--orange);
+  margin-top: 12px;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+
+.slash-accent-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Orange slash decorative element */
+.slash-divider {
+  width: 48px;
+  height: 5px;
+  background: var(--orange);
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+/* Counter animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.count-animate {
+  animation: countUp 0.6s ease-out forwards;
+}
+
+/* Hero entrance animation (CSS-only to avoid hydration mismatch) */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-fade-up {
+  opacity: 0;
+  animation: heroFadeUp 0.7s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 3px;
+}
+
+/* Section padding utility */
+.section-pad {
+  @apply py-20 lg:py-28;
+}
+
+/* Orange button */
+.btn-primary {
+  @apply inline-flex items-center gap-2 bg-brand-orange text-white px-7 py-3.5 font-semibold text-sm tracking-wide uppercase transition-all duration-300 hover:bg-brand-orange-dark hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-500/20;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 border-2 border-brand-orange text-brand-orange px-7 py-3.5 font-semibold text-sm tracking-wide uppercase transition-all duration-300 hover:bg-brand-orange hover:text-white hover:-translate-y-0.5;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%);
+}
+
+.btn-outline-white {
+  @apply inline-flex items-center gap-2 border-2 border-white text-white px-7 py-3.5 font-semibold text-sm tracking-wide uppercase transition-all duration-300 hover:bg-white hover:text-brand-black hover:-translate-y-0.5;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%);
+}
+
+/* Card hover */
+.service-card {
+  @apply bg-white border border-gray-100 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/10 hover:border-brand-orange/20;
+}
+
+/* Industrial background pattern */
+.industrial-pattern {
+  background-image: 
+    linear-gradient(rgba(17,17,17,0.97), rgba(17,17,17,0.97)),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(232,68,10,0.03) 10px,
+      rgba(232,68,10,0.03) 20px
+    );
+}
+
+/* Navbar */
+.navbar-scrolled {
+  @apply shadow-lg shadow-black/10;
+}
+
+/* Services marquee (horizontal auto-scroll) */
+@keyframes servicesMarquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.services-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.services-marquee {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: servicesMarquee 40s linear infinite;
+}
+
+.services-marquee:hover {
+  animation-play-state: paused;
+}
+
+.services-marquee-item {
+  flex-shrink: 0;
+  width: 380px;
+}
+
+@media (max-width: 640px) {
+  .services-marquee-item {
+    width: 300px;
+  }
+}
+
+/* ── Clients logo marquee ── */
+@keyframes clientsTicker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes clientsTickerReverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.clients-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.clients-marquee {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: clientsTicker 30s linear infinite;
+}
+
+.clients-marquee-reverse {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: clientsTickerReverse 30s linear infinite;
+}
+
+.clients-marquee:hover,
+.clients-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+.clients-marquee-item {
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
