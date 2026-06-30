@@ -31,7 +31,7 @@ const contactCards = [
     title: "Visit Us",
     primary: "1st Floor, Al Jabal Street near Saudi Airlines",
     secondary: "Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia",
-    action: "#map",
+    action: "https://maps.app.goo.gl/jsuBeWdMq56SrMTw8",
     actionLabel: "View Map",
   },
 ];
@@ -76,6 +76,8 @@ export default function ContactPage() {
                 </div>
                 <a
                   href={card.action}
+                  target={card.action.startsWith("http") ? "_blank" : undefined}
+                  rel={card.action.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="text-white border border-white/30 px-3 py-2 text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-brand-orange transition-colors duration-200 whitespace-nowrap"
                 >
                   {card.actionLabel}
