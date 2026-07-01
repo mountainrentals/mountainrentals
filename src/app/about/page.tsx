@@ -3,12 +3,16 @@ import { Target, Eye, Award, ShieldCheck, Star, Handshake, CheckCircle2, Trendin
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CTASection from "@/components/sections/CTASection";
+import JsonLd from "@/components/seo/JsonLd";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 export const metadata: Metadata = {
   title: "About Us — Who We Are",
   description:
     "Learn about Great Mountain General Contracting Establishment — our mission, vision, values, and commitment to Saudi industrial excellence.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const values = [
@@ -32,8 +36,18 @@ const strengths = [
 ];
 
 export default function AboutPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mountainksa.com" },
+      { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.mountainksa.com/about" }
+    ]
+  };
+
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
       {/* Page Hero */}
       <section className="relative pt-36 pb-20 bg-brand-black overflow-hidden">
         <div

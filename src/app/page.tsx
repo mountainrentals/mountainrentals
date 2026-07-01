@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Industrial Solutions You Can Trust | GMGCE",
   description:
     "Great Mountain General Contracting Establishment delivers reliable equipment rental, manpower supply, trading, and material solutions across Saudi Arabia.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {

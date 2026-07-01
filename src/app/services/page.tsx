@@ -14,10 +14,15 @@ import {
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CTASection from "@/components/sections/CTASection";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
+  title: "Industrial Services in Saudi Arabia",
   description:
     "GMGCE provides Equipment Rental, Manpower Supply, Trading and Material Supply, Portacabin & Container Services, and Industrial Support Services across Saudi Arabia.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 const services = [
@@ -139,8 +144,33 @@ const services = [
 ];
 
 export default function ServicesPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mountainksa.com" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.mountainksa.com/services" }
+    ]
+  };
+
+  const serviceSchemas = services.map(service => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service.title,
+    "description": service.desc,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "GMGCE"
+    },
+    "areaServed": "Saudi Arabia"
+  }));
+
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
+      {serviceSchemas.map((schema, idx) => (
+        <JsonLd key={idx} data={schema} />
+      ))}
       {/* Page Hero */}
       <section className="relative pt-36 pb-20 bg-brand-black overflow-hidden">
         <div

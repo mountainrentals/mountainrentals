@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock, ChevronRight } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeader from "@/components/ui/SectionHeader";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Contact Us — Get in Touch",
   description:
     "Contact Great Mountain General Contracting Establishment for equipment rental, manpower supply, and industrial services across Saudi Arabia.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const contactCards = [
@@ -37,8 +41,18 @@ const contactCards = [
 ];
 
 export default function ContactPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mountainksa.com" },
+      { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://www.mountainksa.com/contact" }
+    ]
+  };
+
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
       {/* Page Hero */}
       <section className="relative pt-36 pb-20 bg-brand-black overflow-hidden">
         <div
