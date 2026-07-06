@@ -143,7 +143,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Great Mountain General Contracting Establishment. All Rights Reserved.
           </p>
           <p className="text-white text-xs">
-            CR No. · VAT No. · Kingdom of Saudi Arabia
+            CR No. 7003624967 · VAT No. 310098647200003· Kingdom of Saudi Arabia
           </p>
         </div>
       </div>
