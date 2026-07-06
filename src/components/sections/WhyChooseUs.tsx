@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <SectionHeader
-            eyebrow="Why Choose Mountaim rentals"
+            eyebrow="Why Choose Mountain rentals"
             title="Built for Industrial Excellence"
             subtitle="We combine deep industry knowledge, a professional workforce, and proven operational systems to deliver results that matter."
           />
