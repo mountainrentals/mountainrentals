@@ -6,7 +6,7 @@ import weldingMachine from './Energy-solution/welding-machine.jpeg';
 
 import bus from './Logistics&Transportation/Bus.jpeg';
 import coaster from './Logistics&Transportation/coaster.jpg';
-import dieselTanker from './Logistics&Transportation/Diesel-tanker.jpeg';
+import dieselTanker from './Logistics&Transportation/Diesel-tanker.png';
 import flatbedTrailer from './Logistics&Transportation/flatbed-trailer.jpeg';
 import foodVan from './Logistics&Transportation/food-van.png';
 import hydraulicLowbed from './Logistics&Transportation/hydraulic-lowbed.jpeg';
@@ -29,7 +29,6 @@ import rollerCompacter from './construction-equipments/roller-compacter.png';
 import wheelExcavators from './construction-equipments/wheel-Excavators.jpeg';
 import wheelLoader from './construction-equipments/wheel-loader.png';
 
-import mobileCrane from './lifting-equipments/mobile-crane.png';
 import roughTerrainCrane from './lifting-equipments/Rough-Terrian-Crane.png';
 import articulatedManlift from './lifting-equipments/articulated-manlift.png';
 import boomTruck from './lifting-equipments/boom-truck.jpeg';
@@ -40,6 +39,7 @@ import electricScissorLift from './lifting-equipments/electric-scissor-lift.png'
 import forkliftCrane from './lifting-equipments/forklift-crane.png';
 import forklift from './lifting-equipments/forklift.jpeg';
 import manBasketTruck from './lifting-equipments/man-basket-truck.png';
+import mobileCrane from './lifting-equipments/mobile-crane.png';
 import sideBoom from './lifting-equipments/side-boom.jpeg';
 import telehandler from './lifting-equipments/telehandler.png';
 import telescopicManlift from './lifting-equipments/telescopic-manlift.png';
@@ -51,7 +51,7 @@ import brush from './special-attachments/brush.jpeg';
 import bucket from './special-attachments/bucket.jpeg';
 import chainSling from './special-attachments/chain-sling.jpeg';
 import manBasket from './special-attachments/man-basket.jpeg';
-import spiderBeam from './special-attachments/spider-beam.png';
+import spiderBeam from './special-attachments/spider-beam.jpeg';
 
 export const categories = [
   {
@@ -79,18 +79,18 @@ export const categories = [
     description: 'Reliable and safe lifting solutions.',
     previewImage: mobileCrane,
     items: [
-      { name: 'Mobile Crane', image: mobileCrane },
       { name: 'Rough Terrain Crane', image: roughTerrainCrane },
-      { name: 'Crawler Crane', image: crawlerCrane },
       { name: 'Articulated Manlift', image: articulatedManlift },
       { name: 'Boom Truck', image: boomTruck },
-      { name: 'Side Boom', image: sideBoom },
+      { name: 'Crawler Crane', image: crawlerCrane },
       { name: 'Diesel Scissor Lift', image: dieselScissorLift },
       { name: 'Electric Forklift', image: electricForklift },
       { name: 'Electric Scissor Lift', image: electricScissorLift },
       { name: 'Forklift Crane', image: forkliftCrane },
       { name: 'Forklift', image: forklift },
       { name: 'Man Basket Truck', image: manBasketTruck },
+      { name: 'Mobile Crane', image: mobileCrane },
+      { name: 'Side Boom', image: sideBoom },
       { name: 'Telehandler', image: telehandler },
       { name: 'Telescopic Manlift', image: telescopicManlift },
       { name: 'Tower Crane', image: towerCrane },
