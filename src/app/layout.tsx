@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default:
-      "Great Mountain General Contracting Establishment | Industrial Services Saudi Arabia",
-    template: "%s | GMGCE",
+      "Great Mountain General Contracting Establishment | Mountain Rentals KSA",
+     template: "%s | Great Mountain",
   },
   description:
     "Great Mountain General Contracting Establishment (GMGCE) provides reliable industrial solutions across Saudi Arabia — Equipment Rental, Manpower Supply, Trading, and Material Supply for Oil & Gas, Petrochemical, and Construction sectors.",
