@@ -1,6 +1,11 @@
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: isGithubActions ? 'export' : undefined,
+  basePath: isGithubActions ? '/mountainrentals' : undefined,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -10,7 +15,10 @@ const nextConfig = {
       },
     ],
   },
-  async headers() {
+};
+
+if (!isGithubActions) {
+  nextConfig.headers = async function() {
     return [
       {
         source: '/(.*)',
@@ -42,7 +50,7 @@ const nextConfig = {
         ],
       },
     ];
-  },
-};
+  };
+}
 
 export default nextConfig;
