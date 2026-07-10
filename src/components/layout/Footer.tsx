@@ -113,7 +113,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white text-sm">
                 <MapPin size={16} className="text-brand-orange mt-0.5 flex-shrink-0" />
-                <span>1st Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, Saudi Arabia</span>
+                <span>3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, Saudi Arabia</span>
               </li>
               <li className="flex items-center gap-3 text-white text-sm">
                 <Phone size={16} className="text-brand-orange flex-shrink-0" />
@@ -143,7 +143,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Great Mountain General Contracting Establishment. All Rights Reserved.
           </p>
           <p className="text-white text-xs">
-            CR No. 7003624967 · VAT No. 310098647200003· Kingdom of Saudi Arabia
+            CR No. 2055025307 · VAT No. 310098647200003· Kingdom of Saudi Arabia
           </p>
         </div>
       </div>

@@ -109,7 +109,7 @@ const siteSchema = {
       address: {
         "@type": "PostalAddress",
         streetAddress:
-          "1st Floor, Al Jabal Street near Saudi Airlines, Jubail City Center",
+          "3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center",
         addressLocality: "Al Jubail",
         postalCode: "31951",
         addressCountry: "SA",

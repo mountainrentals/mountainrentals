@@ -24,7 +24,7 @@ const CONTACT_INFO = {
     { raw: "procurement@mountainksa.com", label: "Procurement Email" },
     { raw: "admin@mountainksa.com", label: "Admin Email" }
   ],
-  address: "1st Floor, Al Jabal Street, Jubail City Center, Al Jubail 31951, KSA",
+  address: "3rd Floor, Al Jabal Street, Jubail City Center, Al Jubail 31951, KSA",
   website: "https://www.mountainksa.com",
   mapQuery: "Al+Jabal+Street+Jubail+City+Center+Al+Jubail+31951",
 };
@@ -36,7 +36,7 @@ export default function ConnectPage() {
       <div className="w-full max-w-md mx-auto bg-[#111111] border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden print:hidden">
         {/* Abstract Background Accent */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange/10 blur-[100px] rounded-full pointer-events-none" />
-        
+
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-8 relative z-10">
           <h1 className="text-2xl font-black text-white mb-2">{CONTACT_INFO.name}</h1>
@@ -121,7 +121,8 @@ export default function ConnectPage() {
       </div>
 
       {/* ─── Print UI (PDF) ─── */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @media print {
           @page { margin: 0; }
           body { padding: 0; }
@@ -139,7 +140,7 @@ export default function ConnectPage() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 border-b border-gray-300 pb-2 mb-3">Phone Numbers</h3>
             {CONTACT_INFO.phones.map((phone, i) => (
               <div key={i} className="mb-2">
-                <span className="font-semibold block">{phone.label}:</span> 
+                <span className="font-semibold block">{phone.label}:</span>
                 <span className="text-lg">{phone.display}</span>
               </div>
             ))}
@@ -149,7 +150,7 @@ export default function ConnectPage() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 border-b border-gray-300 pb-2 mb-3">Email Addresses</h3>
             {CONTACT_INFO.emails.map((email, i) => (
               <div key={i} className="mb-2">
-                <span className="font-semibold block">{email.label}:</span> 
+                <span className="font-semibold block">{email.label}:</span>
                 <span className="text-lg">{email.raw}</span>
               </div>
             ))}

@@ -220,3 +220,29 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Service nav — thin visible scrollbar on mobile to hint horizontal scroll */
+.service-nav-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange) rgba(255,255,255,0.08);
+}
+.service-nav-scroll::-webkit-scrollbar {
+  height: 3px;
+}
+.service-nav-scroll::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+}
+.service-nav-scroll::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 2px;
+}
+
+@media (min-width: 1024px) {
+  .service-nav-scroll {
+    scrollbar-width: none;
+  }
+  .service-nav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+

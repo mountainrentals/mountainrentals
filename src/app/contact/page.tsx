@@ -34,7 +34,7 @@ const contactCards = [
   {
     icon: MapPin,
     title: "Visit Us",
-    primary: "1st Floor, Al Jabal Street near Saudi Airlines",
+    primary: "3rd Floor, Al Jabal Street near Saudi Airlines",
     secondary: "Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia",
     action: "https://maps.app.goo.gl/jsuBeWdMq56SrMTw8",
     actionLabel: "View Map",
@@ -134,7 +134,7 @@ export default function ContactPage() {
                     {
                       icon: MapPin,
                       title: "Office Address",
-                      lines: ["1st Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia"],
+                      lines: ["3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia"],
                     },
                     {
                       icon: Phone,
@@ -182,7 +182,7 @@ export default function ContactPage() {
       {/* Map */}
       <section id="map" className="h-96 bg-brand-mid relative">
         <div className="w-full h-full">
-          <iframe  
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.2!2d49.654153!3d27.0130853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e35a0615d6a705f%3A0x326256486aaa662b!2sJubail%20City%20Center!5e0!3m2!1sen!2s!4v1751443200000!5m2!1sen!2s"
             width="100%"
             height="100%"

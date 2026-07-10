@@ -196,16 +196,23 @@ export default function ServicesPage() {
       {/* Service Nav */}
       <div className="bg-brand-black border-b border-white/10 sticky top-20 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex gap-x-6 overflow-x-auto py-4 justify-center scrollbar-hide">
-            {services.map((s) => (
-              <a
-                key={s.id}
-                href={`#${s.id}`}
-                className="text-white hover:text-brand-orange text-[10px] font-bold uppercase tracking-[0.15em] whitespace-nowrap transition-colors duration-200 pb-1 border-b-2 border-transparent hover:border-brand-orange flex-shrink-0"
-              >
-                {s.title}
-              </a>
-            ))}
+          {/* Fade-right hint on mobile only */}
+          <div className="relative lg:static">
+            <div
+              className="flex gap-x-6 overflow-x-auto py-4 service-nav-scroll lg:justify-center lg:overflow-x-visible"
+            >
+              {services.map((s) => (
+                <a
+                  key={s.id}
+                  href={`#${s.id}`}
+                  className="text-white hover:text-brand-orange text-[10px] font-bold uppercase tracking-[0.15em] whitespace-nowrap transition-colors duration-200 pb-1 border-b-2 border-transparent hover:border-brand-orange flex-shrink-0"
+                >
+                  {s.title}
+                </a>
+              ))}
+            </div>
+            {/* Right gradient fade — hidden on lg */}
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-brand-black to-transparent lg:hidden" />
           </div>
         </div>
       </div>
