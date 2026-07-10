@@ -9,7 +9,7 @@ import IndustriesSection from "@/components/sections/IndustriesSection";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Great Mountain General Contracting Establishment | Mountain Rentals KSA",
+  title: "Mountain Rentals  | Great Mountain General Contracting Establishment",
   description:
     "Great Mountain General Contracting Establishment delivers reliable equipment rental, manpower supply, trading, and material solutions across Saudi Arabia.",
   alternates: {
