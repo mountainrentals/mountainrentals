@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   title: "Great Mountain General Contracting Establishment | Mountain Rentals KSA",
   description:
     "Great Mountain General Contracting Establishment delivers reliable equipment rental, manpower supply, trading, and material solutions across Saudi Arabia.",
-  // alternates: {
-  //   canonical: "/",
-  // },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {
