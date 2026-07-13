@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_SA",
     url: BASE_URL,
-    siteName: "GMGCE — Mountain Rentals",
+    siteName: "Mountain Rentals — Great Mountain General Contracting Establishment",
   },
   alternates: {
     canonical: BASE_URL,

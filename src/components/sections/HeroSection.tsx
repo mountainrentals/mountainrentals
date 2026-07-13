@@ -12,11 +12,9 @@ const slides = [
     eyebrow: "Great Mountain General Contracting Est.",
     headline: (
       <>
-        Industrial
+        Mountain
         <br />
-        <span className="text-brand-orange">Solutions</span>
-        <br />
-        You Can Trust
+        <span className="text-brand-orange">Rentals</span>
       </>
     ),
     description:
