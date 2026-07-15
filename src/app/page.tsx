@@ -9,11 +9,11 @@ import IndustriesSection from "@/components/sections/IndustriesSection";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Mountain Rentals  | Great Mountain General Contracting Establishment",
+  title: "Mountain Rentals  | Heavy Equipment Rental, Manpower Supply & Industrial Services in Saudi Arabia",
   description:
-    "Great Mountain General Contracting Establishment delivers reliable equipment rental, manpower supply, trading, and material solutions across Saudi Arabia.",
+    "Great Mountain General Contracting Establishment provides heavy equipment rental, cranes, excavators, forklifts, manpower supply, transportation, material trading, and industrial support services across Saudi Arabia.",
   alternates: {
-    canonical: "/",
+    canonical: "https://www.mountainksa.com/",
   },
 };
 

@@ -12,13 +12,15 @@ const slides = [
     eyebrow: "Great Mountain General Contracting Est.",
     headline: (
       <>
-        Mountain
+        Mountain Rentals
         <br />
-        <span className="text-brand-orange">Rentals</span>
+        <span className="text-brand-orange">
+          Heavy Equipment Rental
+        </span>
       </>
     ),
     description:
-      "Great Mountain General Contracting Establishment delivers reliable equipment rental, manpower supply, trading, and material solutions that enable industries and drive progress across Saudi Arabia.",
+      "Mountain Rentals provides heavy equipment rental, cranes, forklifts, excavators, manpower supply, transportation, material trading, and industrial support services across Saudi Arabia.",
     tagline: "Enabling Industries · Empowering Businesses · Driving Progress",
     primaryCta: { label: "Our Services", href: "/services" },
     secondaryCta: { label: "Contact Us", href: "/contact" },
@@ -151,7 +153,11 @@ export default function HeroSection() {
 
                 {/* Headline */}
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-none tracking-tight mb-6">
-                  {slide.headline}
+                      Mountain Rentals
+                      <br />
+                      <span className="text-brand-orange">
+                        Heavy Equipment Rental & Industrial Services
+                      </span>
                 </h1>
 
                 {/* Description */}

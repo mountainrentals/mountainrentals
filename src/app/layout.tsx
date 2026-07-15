@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s | Mountain Rentals",
   },
   description:
-    "Great Mountain General Contracting Establishment (GMGCE) provides reliable industrial solutions across Saudi Arabia — Equipment Rental, Manpower Supply, Trading, and Material Supply for Oil & Gas, Petrochemical, and Construction sectors.",
+    "Great Mountain General Contracting Establishment provides reliable industrial solutions across Saudi Arabia — Equipment Rental, Manpower Supply, Trading, and Material Supply for Oil & Gas, Petrochemical, and Construction sectors.",
   keywords: [
     "industrial services Saudi Arabia",
     "equipment rental KSA",
@@ -105,7 +105,7 @@ const siteSchema = {
         height: 480,
       },
       description:
-        "Great Mountain General Contracting Establishment (GMGCE) provides reliable industrial solutions across Saudi Arabia — Equipment Rental, Manpower Supply, Trading and Material Supply, Heavy Lifting, Transportation, and Portacabin Services for Oil & Gas, Petrochemical, and Construction sectors.",
+        "Great Mountain General Contracting Establishment provides reliable industrial solutions across Saudi Arabia — Equipment Rental, Manpower Supply, Trading and Material Supply, Heavy Lifting, Transportation, and Portacabin Services for Oil & Gas, Petrochemical, and Construction sectors.",
       address: {
         "@type": "PostalAddress",
         streetAddress:
@@ -144,7 +144,10 @@ const siteSchema = {
     {
       "@type": "WebSite",
       "@id": `${BASE_URL}/#website`,
-      name: "GMGCE — Mountain Rentals",
+      name: "Mountain Rentals",
+      "legalName": 
+      "Great Mountain General Contracting Establishment",
+
       url: BASE_URL,
       description:
         "Industrial services company in Saudi Arabia — Equipment Rental, Manpower Supply, Trading, Heavy Lifting, Transportation and Portacabin Services.",
