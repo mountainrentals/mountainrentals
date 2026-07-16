@@ -24,7 +24,7 @@ const CONTACT_INFO = {
     { raw: "procurement@mountainksa.com", label: "Procurement Email" },
     { raw: "admin@mountainksa.com", label: "Admin Email" }
   ],
-  address: "3rd Floor, Al Jabal Street, Jubail City Center, Al Jubail 31951, KSA",
+  address: "3rd Floor - Al Khater building, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, KSA",
   website: "https://www.mountainksa.com",
   mapQuery: "Al+Jabal+Street+Jubail+City+Center+Al+Jubail+31951",
 };
@@ -83,7 +83,7 @@ export default function ConnectPage() {
           ))}
 
           <a
-            href="https://maps.app.goo.gl/ZD6dKnYJfJ5CW8H39"  
+            href="https://maps.app.goo.gl/ZD6dKnYJfJ5CW8H39"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 bg-white/5 hover:bg-white/10 border border-white/5 rounded-2xl p-4 transition-colors group"
@@ -94,6 +94,21 @@ export default function ConnectPage() {
             <div className="flex flex-col overflow-hidden">
               <span className="text-white/60 text-[10px] font-bold uppercase tracking-wider mb-0.5">Directions</span>
               <span className="text-white font-medium text-sm truncate">Al Jubail 31951, KSA</span>
+            </div>
+          </a>
+
+          <a
+            href="https://maps.app.goo.gl/PxbyBsQyVsVdkwGF8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 bg-white/5 hover:bg-white/10 border border-white/5 rounded-2xl p-4 transition-colors group"
+          >
+            <div className="w-12 h-12 rounded-full bg-brand-orange/10 flex flex-shrink-0 items-center justify-center group-hover:bg-brand-orange/20 transition-colors">
+              <MapPin className="w-5 h-5 text-brand-orange" />
+            </div>
+            <div className="flex flex-col overflow-hidden">
+              <span className="text-white/60 text-[10px] font-bold uppercase tracking-wider mb-0.5">Directions</span>
+              <span className="text-white font-medium text-sm truncate">Riyadh 12871, KSA</span>
             </div>
           </a>
 

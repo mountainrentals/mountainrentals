@@ -34,7 +34,7 @@ const contactCards = [
   {
     icon: MapPin,
     title: "Visit Us",
-    primary: "3rd Floor, Al Jabal Street near Saudi Airlines",
+    primary: "3rd Floor - Al Khater building, Al Jabal Street near Saudi Airlines",
     secondary: "Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia",
     action: "https://maps.app.goo.gl/ZD6dKnYJfJ5CW8H39",
     actionLabel: "View Map",
@@ -134,7 +134,7 @@ export default function ContactPage() {
                     {
                       icon: MapPin,
                       title: "Office Address",
-                      lines: ["3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia"],
+                      lines: ["3rd Floor - Al Khater building, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951 Kingdom of Saudi Arabia"],
                     },
                     {
                       icon: Phone,

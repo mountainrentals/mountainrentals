@@ -109,7 +109,7 @@ const siteSchema = {
       address: {
         "@type": "PostalAddress",
         streetAddress:
-          "3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center",
+          "3rd Floor - Al Khater building, Al Jabal Street near Saudi Airlines, Jubail City Center",
         addressLocality: "Al Jubail",
         postalCode: "31951",
         addressCountry: "SA",
@@ -145,8 +145,8 @@ const siteSchema = {
       "@type": "WebSite",
       "@id": `${BASE_URL}/#website`,
       name: "Mountain Rentals",
-      "legalName": 
-      "Great Mountain General Contracting Establishment",
+      "legalName":
+        "Great Mountain General Contracting Establishment",
 
       url: BASE_URL,
       description:
