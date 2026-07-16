@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram, ExternalLink } from "lucide-react";
 
 const services = [
   { label: "Equipment Rental", href: "/services#equipment-rental" },
@@ -46,9 +46,9 @@ export default function Footer() {
             {/* Social */}
             <div className="flex gap-3 mt-6">
               {[
-                { icon: Facebook, href: "#" },
+                { icon: Facebook, href: "https://www.facebook.com/share/1DjYrN6T2j/" },
                 { icon: Linkedin, href: "#" },
-                { icon: Instagram, href: "#" },
+                { icon: Instagram, href: "https://www.instagram.com/mountain_rentals_?igsh=MThkeDM4aGFiZXZ6aA==" },
               ].map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}
@@ -112,7 +112,17 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white text-sm">
                 <MapPin size={16} className="text-brand-orange mt-0.5 flex-shrink-0" />
-                <span>3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, Saudi Arabia</span>
+                <div className="flex flex-col gap-3">
+                  <span>Head Office: 3rd Floor, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, Saudi Arabia</span>
+                  <div className="flex flex-wrap gap-2">
+                    <a href="https://maps.app.goo.gl/ZD6dKnYJfJ5CW8H39" target="_blank" rel="noopener noreferrer" title="View Jubail Office on Google Maps" className="inline-flex items-center gap-1.5 text-xs bg-brand-orange text-white hover:bg-brand-orange/90 px-3 py-1.5 rounded transition-all duration-300 group">
+                      <MapPin size={12} /> Jubail <ExternalLink size={12} className="opacity-70 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                    <a href="https://maps.app.goo.gl/PxbyBsQyVsVdkwGF8" target="_blank" rel="noopener noreferrer" title="View Riyadh Office on Google Maps" className="inline-flex items-center gap-1.5 text-xs bg-brand-orange text-white hover:bg-brand-orange/90 px-3 py-1.5 rounded transition-all duration-300 group">
+                      <MapPin size={12} /> Riyadh <ExternalLink size={12} className="opacity-70 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  </div>
+                </div>
               </li>
               <li className="flex items-center gap-3 text-white text-sm">
                 <Phone size={16} className="text-brand-orange flex-shrink-0" />

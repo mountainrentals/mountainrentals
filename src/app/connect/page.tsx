@@ -83,7 +83,7 @@ export default function ConnectPage() {
           ))}
 
           <a
-            href="https://maps.app.goo.gl/jsuBeWdMq56SrMTw8?g_st=awb"
+            href="https://maps.app.goo.gl/ZD6dKnYJfJ5CW8H39"  
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 bg-white/5 hover:bg-white/10 border border-white/5 rounded-2xl p-4 transition-colors group"
