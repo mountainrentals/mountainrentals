@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram } from "lucide-react";
 
 const services = [
   { label: "Equipment Rental", href: "/services#equipment-rental" },
@@ -47,7 +47,6 @@ export default function Footer() {
             <div className="flex gap-3 mt-6">
               {[
                 { icon: Facebook, href: "#" },
-                { icon: Twitter, href: "#" },
                 { icon: Linkedin, href: "#" },
                 { icon: Instagram, href: "#" },
               ].map(({ icon: Icon, href }, i) => (
@@ -118,7 +117,10 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-white text-sm">
                 <Phone size={16} className="text-brand-orange flex-shrink-0" />
                 <a href="tel:+966500000000" className="hover:text-brand-orange transition-colors">
-                  +966 541242777
+                  +966 541242777,
+                </a>
+                <a href="tel:+966500000000" className="hover:text-brand-orange transition-colors">
+                  +966 549164777
                 </a>
               </li>
               <li className="flex items-center gap-3 text-white text-sm">
@@ -132,6 +134,25 @@ export default function Footer() {
                 <span>Sat – Thu: 8:00 AM – 6:00 PM</span>
               </li>
             </ul>
+
+            {/* Aramco Vendor Code */}
+            <div className="mt-10 bg-white/5 border border-white/10 p-4 rounded-lg inline-flex flex-col gap-3">
+              <div className="flex items-center gap-4">
+                <div className="bg-white p-2 rounded-md">
+                  <Image
+                    src="/images/aramco.png"
+                    alt="Aramco Logo"
+                    width={120}
+                    height={40}
+                    className="h-8 w-auto object-contain"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-white/60 text-xs font-medium tracking-wider">VENDOR CODE</span>
+                  <span className="text-white font-bold tracking-widest">10065804</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
