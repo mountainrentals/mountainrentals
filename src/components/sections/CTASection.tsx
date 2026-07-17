@@ -45,7 +45,7 @@ export default function CTASection() {
               Request a Consultation
               <ChevronRight size={16} />
             </Link>
-            <a href="tel:+966500000000" className="inline-flex items-center gap-2 text-white font-semibold text-sm uppercase tracking-wider hover:gap-4 transition-all duration-200">
+            <a href="tel:+966541242777" className="inline-flex items-center gap-2 text-white font-semibold text-sm uppercase tracking-wider hover:gap-4 transition-all duration-200">
               <Phone size={16} />
               +966 541242777
             </a>

@@ -20,7 +20,7 @@ const contactCards = [
     title: "Call Us",
     primary: "+966 541242777",
     secondary: "+966 549164777",
-    action: "tel:+966500000000",
+    action: "tel:+966541242777",
     actionLabel: "Call Now",
   },
   {
@@ -55,7 +55,7 @@ export default function ContactPage() {
     <>
       <JsonLd data={breadcrumbSchema} />
       {/* Page Hero */}
-      <section className="relative pt-36 pb-20 bg-brand-black overflow-hidden">
+      <section className="relative pt-56 pb-20 bg-brand-black overflow-hidden">
         <div
           className="absolute inset-0 opacity-5"
           style={{

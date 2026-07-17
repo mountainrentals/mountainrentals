@@ -8,7 +8,7 @@ const slides = [
   {
     id: 1,
     backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80')`,
-    label: "Trading Materials",
+    //label: "Trading Materials",
     eyebrow: "Great Mountain General Contracting Est.",
     headline: (
       <>
@@ -28,7 +28,7 @@ const slides = [
   {
     id: 2,
     backgroundImage: `url('/images/cranes-fleet.jpeg')`,
-    label: "Heavy Lifting",
+    //label: "Heavy Lifting",
     eyebrow: "Heavy Equipment & Crane Rental",
     headline: (
       <>
@@ -48,7 +48,7 @@ const slides = [
   {
     id: 3,
     backgroundImage: `url('/images/jcb-fleet.jpg')`,
-    label: "Civil Equipment",
+    //label: "Civil Equipment",
     eyebrow: "Multi-Equipment Rental Solutions",
     headline: (
       <>
@@ -68,7 +68,7 @@ const slides = [
   {
     id: 4,
     backgroundImage: `url('/images/ManpowerSupply.webp')`,
-    label: "Manpower Supply",
+    //label: "Manpower Supply",
     eyebrow: "Qualified & Skilled Workforce",
     headline: (
       <>
@@ -138,7 +138,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-transparent" />
 
             {/* Content */}
-            <div className="relative z-10 h-full flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-16">
+            <div className="relative z-10 h-full flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-56 pb-16">
               <div className="max-w-3xl">
 
                 {/* Eyebrow */}
