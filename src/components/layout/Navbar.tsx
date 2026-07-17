@@ -14,10 +14,11 @@ const navLinks = [
   {
     label: "Documents",
     subLinks: [
-      { href: "/documents/Profile.pdf", label: "Company Profile" },
-      { href: "/documents/CR.pdf", label: "CR" },
-      { href: "/documents/Vat.pdf", label: "VAT Certificate" },
-      { href: "/documents/aramco-vendor-code.pdf", label: "Aramco Vendor Code" },
+      { href: "/documents/Profile.pdf", label: "COMPANY PROFILE" },
+      { href: "/documents/CR.pdf", label: "C.R CERTIFICATE" },
+      { href: "/documents/Vat.pdf", label: "VAT CERTIFICATE" },
+      { href: "/documents/aramco-vendor-code.pdf", label: "ARAMCO VENDOR CODE" },
+      { href: "/documents/National-address.pdf", label: "NATIONAL ADDRESS" },
     ],
   },
   { href: "/contact", label: "Contact Us" },
