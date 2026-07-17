@@ -17,7 +17,7 @@ const navLinks = [
       { href: "/documents/Profile.pdf", label: "Company Profile" },
       { href: "/documents/CR.pdf", label: "CR" },
       { href: "/documents/Vat.pdf", label: "VAT Certificate" },
-      { href: "/documents/Saudi_Aramco_Certificate.pdf", label: "Aramco Vendor Code" },
+      { href: "/documents/aramco-vendor-code.pdf", label: "Aramco Vendor Code" },
     ],
   },
   { href: "/contact", label: "Contact Us" },
