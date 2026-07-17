@@ -9,7 +9,7 @@ const clients = [
   { name: "alfanar",                 logo: "/images/clients/alfanar.png" },
   { name: "landt",                   logo: "/images/clients/landt.png" },
   { name: "samsung",                 logo: "/images/clients/samsung.png" },
-  { name: "sinopec",                 logo: "/images/clients/sinopec.png" },
+  { name: "sinopec",                 logo: "/images/clients/Sinopec.png" },
   { name: "tamimi",                  logo: "/images/clients/tamimi.png" },
   { name: "Hyundai",                 logo: "/images/clients/Hyundai.png" },
   { name: "reda",                    logo: "/images/clients/reda.jpg" },
