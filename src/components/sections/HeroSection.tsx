@@ -223,7 +223,7 @@ export default function HeroSection() {
 
       {/* Slide counter */}
       <div className="absolute bottom-20 right-8 z-[10] text-white text-xs font-medium tracking-[0.2em] uppercase">
-        {slides[current].label} &nbsp;{current + 1} / {slides.length}
+        {current + 1} / {slides.length}
       </div>
 
       {/* Scroll indicator */}
